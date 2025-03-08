@@ -171,10 +171,10 @@
                             <a
                                 href="https://spurropen.com/supportfreecamp" target="_blank"
                                 id="donation-card"
-                                class=" hover:backdrop-blur-sm flex flex-col items-start gap-6 rounded-lg bg-white p-6 
-                                        hover:shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 
-                                        hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] 
-                                        md:row-span-3 lg:p-10 lg:pb-10 bg-blue-950 dark:bg-blue-600/30 dark:ring-blue-950 dark:text-white/70 
+                                class=" hover:backdrop-blur-sm flex flex-col items-start gap-6 rounded-lg p-6 
+                                        hover:shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300
+                                        focus:outline-none focus-visible:ring-[#FF2D20] 
+                                        md:row-span-3 lg:p-10 lg:pb-10 dark:bg-blue-600/30 dark:ring-blue-950 dark:text-white/70 
                                         dark:ring-blue-400 dark:focus-visible:ring-[#FF2D20] "
                             >
                                 <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
