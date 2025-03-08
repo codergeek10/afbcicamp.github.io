@@ -21,10 +21,10 @@
         <div class="bg-gray-50 text-black/50 dark:bg-blue-950 dark:text-white/50">
             <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src=" {{ asset('/img/background.svg') }} " />
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
-                <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl px-14">
+                <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
 
                     <main class="mt-2 grid gap-6 lg:grid-cols-1 lg:gap-8 overflow-hidden">
-                        <header class=" grid grid-cols-2 items-center gap-2 pt-10 px-2 lg:grid-cols-3">
+                        <header class=" grid grid-cols-2 items-center gap-2 pt-6 px-2 lg:grid-cols-3">
                             <div class="flex gap-4 items-center">
                                 <p class="text-white">Space Left:</p>
                                 <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-white sm:size-10 p-8">
@@ -147,7 +147,7 @@
                         
 
                         {{-- Video Promo --}}
-                        <div class="grid gap-6 lg:grid-cols-1 lg:gap-8 py-14">
+                        <div class="grid gap-6 lg:grid-cols-1 lg:gap-8 py-5">
                             {{-- <div id="donation-card"
                                 class=" backdrop-blur-sm flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 
                                         shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 
@@ -155,7 +155,7 @@
                                         md:row-span-3 lg:p-10 lg:pb-10 dark:bg-blue-600/30 dark:ring-blue-500 dark:hover:text-white/70 
                                         dark:hover:ring-blue-400 dark:focus-visible:ring-[#FF2D20] backdrop-blur-md"> --}}
                                    
-                                <video class="aspect-video h-full w-full flex-2 rounded-[10px] object-top object-cover" autoplay muted loop>
+                                <video class="aspect-video w-5/6 mx-auto flex-2 rounded-[10px] object-top object-cover" autoplay muted loop>
                                     <source src="{{ asset('video/mockrocket-export.mp4') }}"
                                     alt="Mockup">
                                     
@@ -175,7 +175,7 @@
                                         hover:shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300
                                         focus:outline-none focus-visible:ring-[#FF2D20] 
                                         md:row-span-3 lg:p-10 lg:pb-10 dark:bg-blue-600/30 dark:ring-blue-950 dark:text-white/70 
-                                        dark:ring-blue-400 dark:focus-visible:ring-[#FF2D20] "
+                                        dark:hover:ring-blue-400 dark:focus-visible:ring-[#FF2D20] "
                             >
                                 <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
                                     <img
