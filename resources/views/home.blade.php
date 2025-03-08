@@ -147,7 +147,7 @@
                         
 
                         {{-- Video Promo --}}
-                        <div class="grid gap-6 lg:grid-cols-1 lg:gap-8 py-5">
+                        <div class="grid gap-6 lg:grid-cols-1 lg:gap-8 py-2">
                             {{-- <div id="donation-card"
                                 class=" backdrop-blur-sm flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 
                                         shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 
