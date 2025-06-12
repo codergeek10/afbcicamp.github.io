@@ -39,6 +39,9 @@
                                     @auth
                                         <!-- Settings Dropdown -->
                                         <div class="hidden sm:flex sm:items-center sm:ms-6">
+                                            <x-nav-link :href="route('dashboard')" class="me-3 dark:text-white">
+                                                {{ __('Dashboard') }}
+                                            </x-nav-link>
                                             <x-dropdown align="right" width="48">
                                                 <x-slot name="trigger" class="flex items-center">
                                                     <button class="inline-flex items-center px-3 pt-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-white dark:bg-blue-950 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">

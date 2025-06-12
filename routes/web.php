@@ -13,9 +13,10 @@ use Illuminate\Routing\Route as RoutingRoute;
 use App\Http\Controllers\CampProfileController;
 use App\Http\Controllers\MetricsController;
 use App\Http\Controllers\RegistrantsController;
+use App\Http\Controllers\ZonesController;
 
 Route::get('/', function () {
-    $camperCount = Registrant::all()->count();
+    $camperCount = Registrant::where('status', 'Confirmed')->count();
     $spaceLeft = 200 - $camperCount;
     
     return view('home', ['spaceLeft'=>$spaceLeft]);
@@ -48,9 +49,13 @@ Route::middleware(['auth', 'verified', 'admins'])->group(function(){
     Route::get('/users/accounts', [Users::class, 'index'])->name('users');
     Route::patch('/users/{user_id}', [Users::class, 'makeAdmin'])->name('make.admin');
     Route::get('/users/campers', [CampersController::class, 'index'])->name('users.campers');
+
     Route::get('/churches', [ChurchesController::class, 'index'])->name('church');
     Route::get('/churches/create', [ChurchesController::class, 'create'])->name('church.create');
     Route::post('/churches', [ChurchesController::class, 'store'])->name('church.add');
+
+    Route::get('/zones', [ZonesController::class, 'index'])->name('zone');
+
     Route::get('/metrics', [MetricsController::class, 'index'])->name('metrics');
 });
 
